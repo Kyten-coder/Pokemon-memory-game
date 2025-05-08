@@ -1,3 +1,4 @@
+/* General styles */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -109,4 +110,23 @@ body {
 
 #winMessage h2 {
   color: #fff000;
+}
+
+/* Footer styles */
+.footer {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 14px;
+  color: white;
+}
+
+.footer img.hiromi-image {
+  width: 60px; /* Adjusted size */
+  height: auto;
+  border-radius: 5px;
 }
