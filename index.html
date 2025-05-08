@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Watch Your Step - Pokémon Memory Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Welcome Screen -->
+  <div id="welcome" class="screen welcome-screen">
+    <img src="https://c4.wallpaperflare.com/wallpaper/532/919/797/anime-anime-girls-love-live-love-live-sunshine-wallpaper-preview.jpg" alt="Anime Welcome" class="anime-image">
+    <h1>🌊 Welcome to Watch Your Step! 🧠</h1>
+    <p>Select your grid size to begin:</p>
+    <div class="buttons">
+      <button onclick="startGame(4, 4)">4 x 4</button>
+      <button onclick="startGame(5, 6)">5 x 6</button>
+      <button onclick="startGame(6, 6)">6 x 6</button>
+    </div>
+  </div>
+
+  <!-- Game Screen -->
+  <div id="game" class="screen hidden">
+    <div class="top-bar">
+      <span id="timer">Time: 0s</span>
+      <button onclick="restartGame()">🔄 Restart</button>
+    </div>
+    <div id="board" class="board" aria-label="Game Board"></div>
+    <div id="winMessage" class="hidden">
+      <h2>🎉 WoW! You actually Won!</h2>
+      <p>Must be a coincidence! 😏</p>
+      <button onclick="restartGame()">Play Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
